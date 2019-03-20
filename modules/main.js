@@ -6,6 +6,7 @@ define(function (require) {
    */
   let Workspace = require('Workspace');
 
+
   /**
    * With class `Mapper`, let create our instance with title "Random Graphs".
    */

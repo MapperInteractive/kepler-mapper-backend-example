@@ -1,9 +1,10 @@
-from mappercore import Server
-# from helpers.func import run_mapper
+import os
+from mappercore import KMServer
+
+filename = os.path.join('files', 'SumatranTiger.csv')
 
 # create server instance
-server = Server("Mapper Example")
-
+server = KMServer("Mapper Example", filename=filename)
 
 # to run the server in production, please use:
 #  gunicorn run:server
