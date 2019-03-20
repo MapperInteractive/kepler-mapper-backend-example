@@ -91,16 +91,16 @@ define(function (require) {
           attr: 'size'
         },
         {
-          name: 'Average X',
-          attr: 'x_mean'
+          name: 'Median of X',
+          attr: 'x_median'
         },
         {
-          name: 'Average Y',
-          attr: 'y_mean'
+          name: 'Median of Y',
+          attr: 'y_median'
         },
         {
-          name: 'Average Z',
-          attr: 'z_mean'
+          name: 'Median of Z',
+          attr: 'z_median'
         }
       ]
     };
