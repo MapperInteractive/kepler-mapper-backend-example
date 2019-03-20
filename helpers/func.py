@@ -5,7 +5,6 @@ import sklearn
 
 file = path.join(path.dirname(__file__), '..', 'files', 'SumatranTiger.csv')
 original_points = np.genfromtxt(file, dtype=float, delimiter=',')
-print(original_points)
 
 
 def run_mapper(interval, overlap, dbscan_eps, dbscan_min_samples):
@@ -37,9 +36,9 @@ def _parse_result(graph):
         data['nodes'].append({
             "id": str(i),
             "size": len(graph['nodes'][key]),
-            "x_mean": _compute_average(graph['nodes'][key], 0),
-            "y_mean": _compute_average(graph['nodes'][key], 1),
-            "z_mean": _compute_average(graph['nodes'][key], 2)
+            "x_median": _get_median(graph['nodes'][key], 0),
+            "y_median": _get_median(graph['nodes'][key], 1),
+            "z_median": _get_median(graph['nodes'][key], 2)
         })
         i += 1
 
@@ -59,8 +58,5 @@ def _parse_result(graph):
     return data
 
 
-def _compute_average(cluster_points, index):
-    total = 0.0
-    for p in cluster_points:
-        total += original_points[p][index]
-    return total / len(cluster_points)
+def _get_median(cluster_points, index):
+    return np.median([original_points[p][index] for p in cluster_points])

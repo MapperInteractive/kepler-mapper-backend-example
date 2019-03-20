@@ -41,7 +41,7 @@ define(function (require) {
     _getAnchors() {
       let graphData = this._graph.getData().get('nodes');
       return graphData.map((n) => {
-        return [n['x_mean'], n['y_mean'], n['z_mean']];
+        return [n['x_median'], n['y_median'], n['z_median']];
       });
     },
 
@@ -97,8 +97,8 @@ define(function (require) {
       const anchorXYZ = anchorsData.map((d) => {
         return {
           x: d[0] - normalizedData['x_mid'],
-          y: d[2] - normalizedData['y_mid'],
-          z: d[1] - normalizedData['z_mid'],
+          y: d[1] - normalizedData['y_mid'],
+          z: d[2] - normalizedData['z_mid'],
           anchor: true,
         }
       });
