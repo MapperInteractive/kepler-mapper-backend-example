@@ -14,7 +14,7 @@ Please visit [plot.ly](https://plot.ly/~yaodong/96) to have a live demo.
 
 ## Screenshot
 
-![Screen Shot](images/screen_shot.png)
+![Screen Shot](images/screenshot.png)
 
 ## Credits
 
