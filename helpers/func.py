@@ -3,7 +3,7 @@ from kmapper import KeplerMapper, Cover
 import numpy as np
 import sklearn
 
-file = path.join(path.dirname(__file__), '..', 'files', 'points.csv')
+file = path.join(path.dirname(__file__), '..', 'files', 'SumatranTiger.csv')
 original_points = np.genfromtxt(file, dtype=float, delimiter=',')
 print(original_points)
 
