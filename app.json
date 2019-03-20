@@ -1,7 +1,10 @@
 {
   "name": "Mapper Kepler Example",
   "description": "A example of Mapper Core integrated with Kepler Mapper",
-  "repository": "https://github.com/yaodong/mapper-kepler-example",
-  "logo": "https://github.com/yaodong/mapper-kepler-example/blob/master/images/icon.png?raw=true",
-  "keywords": ["mapper", "visualization"]
+  "repository": "https://github.com/mappercore/kepler-mapper-exmaple",
+  "logo": "https://raw.githubusercontent.com/mappercore/kepler-mapper-exmaple/master/logo.png",
+  "keywords": [
+    "mapper",
+    "visualization"
+  ]
 }

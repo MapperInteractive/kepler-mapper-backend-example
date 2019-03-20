@@ -1,4 +1,4 @@
-# Mapper Kepler Example
+# Mapper Core and Kepler Mapper
 
 This is an example of Mapper Core using Kepler Mapper as backend.
 
