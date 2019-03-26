@@ -69,7 +69,7 @@ define(function (require) {
         ],
         // load edges list from server, you can try different method to load other data format
         loader: function (form, setData, setError) {
-          workspace.call('run_mapper', form)
+          workspace.call('kepler_mapper', form)
             .then((data) => {
               setData(data);
             })
@@ -89,31 +89,15 @@ define(function (require) {
         {
           name: 'size of node',
           attr: 'size'
-        },
-        {
-          name: 'Median of X',
-          attr: 'x_median'
-        },
-        {
-          name: 'Median of Y',
-          attr: 'y_median'
-        },
-        {
-          name: 'Median of Z',
-          attr: 'z_median'
         }
       ]
     };
     w.getSidebar().addBlock(block, config);
   }
 
-  function addPointCloudBlock(w) {
-    w.getSidebar().addBlock(require('modules/PointCloud'), {});
-  }
 
   addDataLoaderBlock(workspace);
   addColorFunctionBlock(workspace);
-  addPointCloudBlock(workspace);
 
   workspace.render();
 
