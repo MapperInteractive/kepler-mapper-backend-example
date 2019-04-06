@@ -47,17 +47,17 @@
       {
         "type": "dropdown",
         "config": {
-            "label": "Filter Function", 
-            "name": "filter_function",
-            "options": ["sum", "mean", "median", "max", "min", "std", "dist_mean"]
+          "label": "Filter Function", 
+          "name": "filter_function",
+          "options": ["sum", "mean", "median", "max", "min", "std", "dist_mean"]
         }
       }
     ],
 
     "selection": [
         {
-            "name": "SIZE of node",
-            "attr": "size"
-          }
+          "name": "SIZE of node",
+          "attr": "size"
+        }
     ]
 }
